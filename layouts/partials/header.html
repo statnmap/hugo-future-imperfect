@@ -37,7 +37,7 @@
         {{ template "_internal/schema.html" . }}
         {{ template "_internal/google_news.html" . }}
 
-        {{ if isset .Site.Params "customCSS" }}
+        {{ if isset .Site.Params "customcss" }}
             {{ $.Scratch.Set "cssFiles" .Site.Params.customCSS }}
         {{ else }}
             {{ $.Scratch.Set "cssFiles" false }}
@@ -52,6 +52,7 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
             <link rel="stylesheet" href="/css/main.css">
             <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="{{ "css/academicons.min.css" | absURL }}">
         {{ end }}
 
         {{ if ne ($.Scratch.Get "cssFiles") false }}
