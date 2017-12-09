@@ -93,6 +93,7 @@ DefaultContentLanguage = "en"
             # Sets the menu items in the navigation bar
             # Identifier prepends a Font Awesome icon to the menu item
             # Each language has its own menu.
+
             [[Languages.en.menu.main]]
                 name = "Home"
                 url = "/"
@@ -100,22 +101,34 @@ DefaultContentLanguage = "en"
                 weight = 1
 
             [[Languages.en.menu.main]]
-                name = "About"
-                url = "/about/"
-                identifier = "fa fa-id-card-o"
-                weight = 2
-
-            [[Languages.en.menu.main]]
-                name = "Itemized"
-                url = "/itemized/"
-                identifier = "fa fa-id-card-o"
-                weight = 2
+                name = "Blog"
+                url = "/blog/"
+                identifier = "fa fa-newspaper-o"
+                weight = 2  
 
             [[Languages.en.menu.main]]
                 name = "Categories"
                 url = "/categories/"
                 identifier = "fa fa-sitemap"
-                weight = 5
+                weight = 3
+
+            [[Languages.en.menu.main]]
+                name = "About"
+                url = "/about/"
+                identifier = "fa fa-id-card-o"
+                weight = 4
+
+            [[Languages.en.menu.main]]
+                Name = "Contact"
+                url = "/contact/"
+                identifier = "fa fa-envelope-o"
+                weight = 6 
+
+            [[Languages.en.menu.main]]
+                name = "Itemized"
+                url = "/itemized/"
+                identifier = "fa fa-id-card-o"
+                weight = 7
 
     [Languages.fr]
         LanguageName = "Français"
@@ -149,6 +162,40 @@ DefaultContentLanguage = "en"
 
             [[Languages.fr.menu.main]]
                 name = "Contact"
+                url = "/contact/"
+                identifier = "fa fa-envelope-o"
+                weight = 6
+
+   [Languages.pl]
+        LanguageName = "Polskie"
+        title = "Hugo Future Imperfect in pl"
+        description = "HTML5 UP theme, Future Imperfect z dodatkowymi dodatkami, noszone przez Julio Pescador Multilangues przez StatnMap Powered by Hugo"    
+            [[Languages.pl.menu.main]]
+                name = "Home"
+                url = "/"
+                identifier = "fa fa-home"
+                weight = 1
+
+            [[Languages.pl.menu.main]]
+                name = "Blog"
+                url = "/blog/"
+                identifier = "fa fa-newspaper-o"
+                weight = 2  
+
+            [[Languages.pl.menu.main]]
+                name = "O mnie"
+                url = "/about/"
+                identifier = "fa fa-id-card-o"
+                weight = 4
+
+            [[Languages.pl.menu.main]]
+                name = "Kategorie"
+                url = "/categories/"
+                identifier = "fa fa-sitemap"
+                weight = 3
+
+            [[Languages.pl.menu.main]]
+                name = "Kontakt"
                 url = "/contact/"
                 identifier = "fa fa-envelope-o"
                 weight = 6
