@@ -3,10 +3,7 @@ title = "Contact"
 type = "contact"
 netlify = false
 emailservice = "formspree.io/example@email.com"
-contactname = "Your name"
-contactemail = "Your Email"
-contactsubject = "Subject"
+contactname = "Your Name"
+contactemail = "Your Email Address"
 contactmessage = "Your Message"
-contactlang = "en"
-contactanswertime = 24
 +++

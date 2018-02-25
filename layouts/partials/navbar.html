@@ -1,18 +1,18 @@
 <!-- Header -->
 <header id="header">
     {{ if or .IsHome (not .Site.Params.DynamicTitles) }}
-      <h1><a href="{{ "/" | relLangURL }}">{{ .Site.Params.navbarTitle }}</a></h1>
+      <h1><a href="{{ "/" | relURL }}">{{ .Site.Params.navbarTitle }}</a></h1>
     {{ else if ne .Section "" }}
-      <h1><a href="{{ "/" | relLangURL }}">{{ .Section }}</a></h1>
+      <h1><a href="{{ "/" | relURL }}">{{ .Section }}</a></h1>
     {{ else }}
-      <h1><a href="{{ "/" | relLangURL }}">{{ .Title }}</a></h1>
+      <h1><a href="{{ "/" | relURL }}">{{ .Title }}</a></h1>
     {{ end }}
 
     <nav class="links">
         <ul>
             {{ range .Site.Menus.main }}
                 <li>
-                    <a href="{{ .URL | relLangURL }}">
+                    <a href="{{ .URL }}">
                             <i class="{{ .Identifier }}">&nbsp;</i>{{ .Name }}
                     </a>
                 </li>
@@ -25,9 +25,6 @@
             <li id="share-nav" class="share-menu" style="display:none;">
                 <a class="fa-share-alt" href="#share-menu">Share</a>
             </li>
-            {{ end }}
-            {{ if .Site.IsMultiLingual }}
-              {{ partial "language_switcher" . }}
             {{ end }}
             <li class="search">
                 <a class="fa-search" href="#search">Search</a>
@@ -59,7 +56,7 @@
             <ul class="links">
                 {{ range .Site.Menus.main }}
                     <li>
-                        <a href="{{ .URL | relLangURL }}">
+                        <a href="{{ .URL }}">
                             <h3>
                                 <i class="{{ .Identifier }}">&nbsp;</i>{{ .Name }}
                             </h3>
@@ -73,7 +70,7 @@
         <section class="recent-posts">
             <div class="mini-posts">
                 <header>
-                    <h3>{{ i18n "recent_posts" }}</h3>
+                    <h3>Recent Posts</h3>
                 </header>
                 {{ $.Scratch.Set "recentPosts" .Site.Pages }}
 
@@ -90,7 +87,7 @@
                                 {{ $.Scratch.Set "dateType" .Date }}
                                 <time class="published" datetime=
                                     '{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
-                                    {{ default (i18n "date_format") | .Date.Format }}</time>
+                                    {{ ($.Scratch.Get "dateType").Format "January 2, 2006" }}</time>
                             </header>
                             {{ .Render "featured" }}
                         </article>
@@ -103,7 +100,7 @@
                         {{ else }}
                             "/post/"
                         {{ end }}
-                        class="button">{{ i18n "see_more" }}</a>
+                        class="button">View more posts</a>
                 {{ end }}
             </div>
         </section>

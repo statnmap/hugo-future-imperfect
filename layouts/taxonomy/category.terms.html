@@ -20,10 +20,10 @@
                     <article>
                         <header>
                             {{ if ne $value.Name "" }}
-                                <a href="{{ printf "/%s/%s" $data.Plural $value.Name | urlize | relLangURL }}">{{ $value.Name }}</a>
+                                <a href="{{"/" | relURL}}{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a>
                                 <span style="float:right;">{{ $value.Count }}</span>
                             {{ else }}
-                                {{ i18n "uncategorized" }}
+                                Uncategorized
                                 <span style="float:right;">{{ $value.Count }}</span>
                             {{ end }}
                         </header>
