@@ -219,3 +219,4 @@ This theme is released under the MIT license. Please read the [license](https://
 
 [jpescador]: https://github.com/jpescador
 [pacollins]: https://github.com/pacollins
+[statnmap]: https://github.com/statnmap
