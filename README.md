@@ -5,7 +5,7 @@ coincidence, because it is a port of [HTML5 UP's theme](http://html5up.net/futur
 by the same name. In addition to the original features, there are more features
 that have been added for you to utilize.
 
-<img src="images/screenshot_multilingual.png" alt="Hugo Future Imperfect Screenshot" width="45%"><img src="images/screenshot_bloglist.png" alt="Blog post list" width="45%">
+<img src="images/screenshot_multilingual.png" alt="Hugo Future Imperfect Screenshot" width="45%">   <img src="images/screenshot_bloglist.png" alt="Blog post list" width="45%">
 
 Check out this [website](https://marionlouveaux.fr) if you are interested in seeing a live example.
 
@@ -200,11 +200,13 @@ Credit: [jpescador]
 
 Syntax highlighting for code is allowed with `highlight.js`. This can be disabled in the `config.toml`. Version, additional languages, CDN and theme can also be modified.
 
+```
     disable_highlight = false
     highlightjsVersion = "9.11.0"
     highlightjsCDN = "//cdn.bootcss.com"
     highlightjsLang = ["r", "yaml"]
     highlightjsTheme = "github"
+```
 
 Credit: [yihui, statnmap]
 
@@ -224,6 +226,7 @@ Credit: [statnmap]
 
 You can define parameters for related articles at the bottom of blog posts.
 
+```
 [related]
   # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
   threshold = 50
@@ -245,6 +248,7 @@ weight = 100
 name  = "date"
 weight = 10
 pattern = "2006"
+```
 
 See <https://gohugo.io/content-management/related/> for more informations.
 
