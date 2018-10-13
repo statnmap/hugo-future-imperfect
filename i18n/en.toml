@@ -46,3 +46,5 @@
   other = "Next Page"
 [previous_page]
   other = "Previous Page"
+[related_articles]
+  other = "Related articles"

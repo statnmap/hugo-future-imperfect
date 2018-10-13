@@ -1955,6 +1955,34 @@
           }
 
 			}
+			
+/* Related articles */
+.related-articles {
+    display: inline-block;
+    background: #fff;
+    margin-top: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(160, 160, 160, 0.3);
+    padding-top: 1em;
+}
+.related-articles h3 {
+    letter-spacing: 2px;
+    line-height: 1em;
+    font-weight: bold;
+    color: #565a5f;
+    text-transform: uppercase;
+}
+.related-articles ul, .related-articles ul li {
+  list-style: none;
+  padding: 0;
+}
+.related-articles ul li ul {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+    margin: 0;
+}
+
 
 /* Section/Article */
 

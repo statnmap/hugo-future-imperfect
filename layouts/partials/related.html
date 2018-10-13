@@ -1,0 +1,25 @@
+{{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ with $related }}
+<div class="related-articles">
+<h3>{{ i18n "related_articles" }}</h3>
+<ul>
+	<li>
+	{{ range . }}
+	  <ul>
+      <article class="mini-post">
+        <header>
+          <h3>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h3>
+          {{ $.Scratch.Set "dateType" .Date }}
+          <time class="published" datetime='{{ .Date }}'>
+          {{ default (i18n "date_format") | .Date.Format }}</time>
+        </header>
+        {{ .Render "featured" }}
+      </article>
+  	</ul>
+	{{ end }}
+	</li>	
+</ul>
+</div>
+{{ end }}
