@@ -5,9 +5,12 @@ coincidence, because it is a port of [HTML5 UP's theme](http://html5up.net/futur
 by the same name. In addition to the original features, there are more features
 that have been added for you to utilize.
 
-![Hugo Future Imperfect Screenshot](https://raw.githubusercontent.com/jpescador/hugo-future-imperfect/master/images/screenshot.png)
+<img src="images/screenshot_multilingual.png" alt="Hugo Future Imperfect Screenshot" width="45%"><img src="images/screenshot_bloglist.png" alt="Blog post list" width="45%">
 
 Check out this [website](https://marionlouveaux.fr) if you are interested in seeing a live example.
+
+
+
 
 ## Table of Contents
 
@@ -23,6 +26,7 @@ Check out this [website](https://marionlouveaux.fr) if you are interested in see
 	- [img-post](#img-post)
 	- [img-fit](#img-fit)
 	- [url-link](#url-link)
+- [Syntax highlighting](#syntax-highlighting)
 - [Multilanguage](#multilingual)
 - [About the Author](#about-the-author)
 - [License](#license)
@@ -36,7 +40,7 @@ Run the following commands in your Hugo site directory:
 ```
 mkdir themes
 cd themes
-git clone https://github.com/jpescador/hugo-future-imperfect.git
+git clone https://github.com/statnmap/hugo-future-imperfect.git
 ```
 
 You will then have access to the theme at _themes/hugo-future-imperfect_ from within
@@ -192,6 +196,17 @@ Please refer to _layouts/shortcodes/url-link.html_ for more details on the funct
 
 Credit: [jpescador]
 
+## Syntax highlighting
+
+Syntax highlighting for code is allowed with `highlight.js`. This can be disabled in the `config.toml`. Version, additional languages, CDN and theme can also be modified.
+
+    disable_highlight = false
+    highlightjsVersion = "9.11.0"
+    highlightjsCDN = "//cdn.bootcss.com"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+Credit: [yihui, statnmap]
 
 ## Multilingual
 
@@ -202,6 +217,38 @@ A language switcher is also available with multilingual website activated. You c
 The `config.toml` file in `exampleSite` proposes menus for a second language (French). However, as no posts, itemized or contacts are saved with `.fr.md` extension in this exampleSite, menu items may redirect to the `404 not found` page.
 
 If you only have one language for your website, you can remove every `Languages`, `Languages.en` and `Languages.fr` occurences. Simple `[menu.main]` have to be used instead.
+
+Credit: [statnmap]
+
+## Related articles
+
+You can define parameters for related articles at the bottom of blog posts.
+
+[related]
+  # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+  threshold = 50
+  # To get stable "See also" sections we, by default, exclude newer related pages.
+  includeNewer = true
+  # Will lower case keywords in both queries and in the indexes.
+  toLower = true
+[[related.indices]]
+name = "keywords"
+weight = 150
+[[related.indices]]
+name  = "author"
+toLower = true
+weight = 30
+[[related.indices]]
+name  = "tags"
+weight = 100
+[[related.indices]]
+name  = "date"
+weight = 10
+pattern = "2006"
+
+See <https://gohugo.io/content-management/related/> for more informations.
+
+<img src="images/screenshot-related.png" alt="Related articles" width="45%" style="">
 
 Credit: [statnmap]
 
