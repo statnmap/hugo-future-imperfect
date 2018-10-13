@@ -9,7 +9,7 @@
 	Modified/Cleaned for use with Hugo-Future-Imperfect Theme
 	gohugo.io | @pacollins
 	
-	Modified for Multiple languages
+	Modified for Multiple languages and posts list itemized
 	statnmap.com | @statnmap
 */
 
@@ -1357,10 +1357,15 @@
 
     #content blockquote,
 		#content p,
-		#content ul{
+		#content ul,
+		#content ul li {
         margin: 1em 0;
     }
 
+		#content ul li ul, #content ul li ul li{
+        margin: 0;
+    }
+    
 		.post > .image.featured {
 			overflow: hidden;
 		}
@@ -1397,18 +1402,22 @@
 				flex-grow: 1;
 			}
 
-			.post > footer .stats {
+			.post > footer .stats,
+			.itemized > header .stats {
 				cursor: default;
 				list-style: none;
 				padding: 0;
 			}
 
         .post > footer .stats li,
-        .post > footer .stats li ul {
+        .post > footer .stats li ul,
+        .itemized > header .stats li,
+        .itemized > header .stats li ul {
           margin: 0;
           padding-left: 0;
         }
-				.post > footer .stats li ul li {
+				.post > footer .stats li ul li,
+				.itemized > header .stats li ul li{
 					border-left: solid 1px rgba(160, 160, 160, 0.3);
 					display: inline-block;
 					font-family: "Raleway", Helvetica, sans-serif;
@@ -1421,17 +1430,20 @@
 					text-transform: uppercase;
 				}
 
-					.post > footer .stats li ul li:first-child {
+					.post > footer .stats li ul li:first-child,
+					.itemized > header .stats li ul li:first-child{
 						border-left: 0;
 						margin-left: 0;
 						padding-left: 0;
 					}
 
-					.post > footer .stats li ul li .icon {
+					.post > footer .stats li ul li .icon,
+					.itemized > header .stats li ul li .icon{
 						border-bottom: 0;
 					}
 
-						.post > footer .stats li ul li .icon:before {
+						.post > footer .stats li ul li .icon:before,
+						.itemized > header .stats li ul li .icon:before{
 							color: rgba(160, 160, 160, 0.3);
 							margin-right: 0.75em;
 						}
@@ -1584,11 +1596,13 @@
 				flex-direction: column-reverse;
 			}
 
-				.post > footer .stats {
+				.post > footer .stats,
+				.itemized > header .stats {
 					text-align: center;
 				}
 
-					.post > footer .stats li ul li {
+					.post > footer .stats li ul li,
+					.itemized > header .stats li ul li{
 						margin: 0 0 0 1.25em;
 						padding: 0 0 0 1.25em;
 					}
@@ -1739,6 +1753,27 @@
 								margin-right: 0.75em;
 							}
 
+      /* Itemized post-list */
+      .itemized .header-left {
+        padding: 1.5em 3em 1.5em 3em;
+      }
+      .itemized .header-top-left {
+        display: inline-block;
+        margin-bottom: 1em;
+      }
+      .itemized .header-top-left .mini-featured {
+        width: 50%;
+        float: left;
+        margin-right: 1em;
+      }
+      .itemized .header-top-left .image.featured {
+        margin: 0 0 0.5em 0;
+      }
+      
+      .itemized .header-top-left .title {
+        padding: 0;
+      }
+      
 			@media screen and (max-width: 980px) {
 
 				.itemized {
@@ -1844,6 +1879,18 @@
 							font-size: 1em;
 						}
 
+          .itemized > header .stats,  
+          .itemized > header .summary {
+            display: none; 
+          }
+          
+        .itemized .header-top-left .mini-featured {
+          width: 30%;
+        }
+        
+        .itemized .header-left {
+            padding: 0em 2em;
+        }
 			}
 
 			@media screen and (max-width: 480px) {
@@ -1894,6 +1941,14 @@
 							margin: 0 0 0 1.25em;
 							padding: 0 0 0 1.25em;
 						}
+						
+					.itemized .header-top-left .mini-featured {
+            width: 100%; 
+          }
+          
+          .itemized > header .meta {
+            margin-bottom: 0;
+          }
 
 			}
 
@@ -1906,7 +1961,8 @@
 	article.post header .title p,
 	article.post header .meta p,
 	article.post header .meta span,
-	article.post footer .stats {
+	article.post footer .stats,
+	article.itemized header .stats{
 	    /* Theoretically for IE 8 & 9 (more valid) */
 	    /* ...but not required as filter works too */
 	    /* should come BEFORE filter */
