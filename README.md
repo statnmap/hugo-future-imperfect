@@ -7,8 +7,7 @@ that have been added for you to utilize.
 
 ![Hugo Future Imperfect Screenshot](https://raw.githubusercontent.com/jpescador/hugo-future-imperfect/master/images/screenshot.png)
 
-Check out this [site](https://themes.gohugo.io/theme/future-imperfect/) if you are
-interested in seeing a live example.
+Check out this [website](https://marionlouveaux.fr) if you are interested in seeing a live example.
 
 ## Table of Contents
 
@@ -24,6 +23,7 @@ interested in seeing a live example.
 	- [img-post](#img-post)
 	- [img-fit](#img-fit)
 	- [url-link](#url-link)
+- [Multilanguage](#multilingual)
 - [About the Author](#about-the-author)
 - [License](#license)
 
@@ -192,15 +192,8 @@ Please refer to _layouts/shortcodes/url-link.html_ for more details on the funct
 
 Credit: [jpescador]
 
-## About the Author
 
-Hugo Future Imperfect was ported by [Julio Pescador](https://jpescador.com). Extra
-features implemented by the [project contributors](https://github.com/jpescador/hugo-future-imperfect/graphs/contributors).
-
-Send Julio Pescador a tweet [@julio_pescador](https://twitter.com/julio_pescador),
-if you like the theme and are using it for your own personal use.
-
-## Multilingual (i18n)
+## Multilingual
 
 You don't blog in English and you want to translate the theme into different language? No problem. Take a look in the `i18n` folder and you'll find a file `en.toml` that we've copied at the beginning. It contains all strings related to the theme. Copy this file, change the name so that it reflects the translation language (like `fr.toml`) and modify the strings needed.
 
@@ -211,6 +204,14 @@ The `config.toml` file in `exampleSite` proposes menus for a second language (Fr
 If you only have one language for your website, you can remove every `Languages`, `Languages.en` and `Languages.fr` occurences. Simple `[menu.main]` have to be used instead.
 
 Credit: [statnmap]
+
+## About the Author
+
+Hugo Future Imperfect was ported by [Julio Pescador](https://jpescador.com). Extra
+features implemented by the [project contributors](https://github.com/jpescador/hugo-future-imperfect/graphs/contributors).
+
+Send Julio Pescador a tweet [@julio_pescador](https://twitter.com/julio_pescador), if you like the theme and are using it for your own personal use.  
+Send StatnMap a tweet [@statnmap](https://twitter.com/statnmap), if you like the modifications of the theme and are using it for your own personal use.
 
 ## License
 
