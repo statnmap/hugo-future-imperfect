@@ -48,3 +48,18 @@
   other = "Previous Page"
 [related_articles]
   other = "Related articles"
+  
+#
+# Code folding
+#
+[showhide_all_code]
+  other = "Show/Hide all code"
+[show_all_code]
+  other = "Show All Code"
+[hide_all_code]
+  other = "Hide All Code"
+[hide_code]
+  other = "Hide"
+[show_code]
+  other = "Code"
+

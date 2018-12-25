@@ -48,3 +48,18 @@
   other = "Page précédente"
 [related_articles]
   other = "Articles similaires"
+  
+#
+# Code folding
+#
+[showhide_all_code]
+  other = "Afficher/Masquer codes"
+[show_all_code]
+  other = "Afficher tous codes"
+[hide_all_code]
+  other = "Masquer tous codes"
+[hide_code]
+  other = "Masquer"
+[show_code]
+  other = "Code"
+  

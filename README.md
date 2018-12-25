@@ -28,6 +28,7 @@ Check out this [website](https://marionlouveaux.fr) if you are interested in see
 	- [url-link](#url-link)
 - [Syntax highlighting](#syntax-highlighting)
 - [Multilanguage](#multilingual)
+- [Code Folding](#code-folding)
 - [About the Author](#about-the-author)
 - [License](#license)
 
@@ -222,6 +223,14 @@ If you only have one language for your website, you can remove every `Languages`
 
 Credit: [statnmap]
 
+## Code folding
+Code folding is enabled by default with `disable_codefolding = false` in parameters of the `config` file. It uses some javascript libraries of [bootstrap](https://getbootstrap.com/docs/3.3/javascript/). Code folding buttons only appear when there is code in the document rendered from `Rmd` in blogdown. `disable_codefolding` can also be used in each article config header. Similarly, you can define if code blocks are shown or hidden by default using `codefolding_show = "hide"` in the config file or in each article config.  
+The list of `<pre>` blocks on which to apply code folding is defined in the `config` file: 
+`codeblocks = ["pre.sourceCode", "pre.r", "pre.python"]`
+ 
+Credit: [statnmap]
+
+ 
 ## Related articles
 
 You can define parameters for related articles at the bottom of blog posts.
