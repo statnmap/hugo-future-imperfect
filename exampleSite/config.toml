@@ -67,6 +67,14 @@ pluralizeListTitles = false
   MathJaxCDN = "//cdn.bootcss.com"
   MathJaxVersion = "2.7.1"
 
+   # Set to true to disable code folding
+   disable_codefolding = false
+   # Set to "hide" or "show" all codes by default
+   codefolding_show = "hide"
+   # Code blocks to apply code folding
+   codeblocks = ["pre.sourceCode", "pre.r", "pre.python", "pre.bash", "pre.sql", "pre.cpp", "pre.stan", "pre.js", "pre.css", "pre.html", "pre.yaml"]
+
+
 # Disqus will take priority over Staticman (github.com/eduardoboucas/staticman)
 # due to its ease of use. Feel free to check out both and decide what you would
 # prefer to use. See Staticman.yml for additional settings.

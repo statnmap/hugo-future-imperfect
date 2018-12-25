@@ -10,12 +10,18 @@
   {{ end }}
 
   {{ .Render "featured" }}
-  <div id="content">
+  
+  <div>
+      {{ partial "header_maincodefolding" . }}
+  <br/>
+  <div id="content" class="article-entry">
     {{ .Content }}
+  </div>
   </div>
 
   <footer>
     {{ partial "footer-category" . }}
+    {{ partial "code-folding" . }}
   </footer>
   {{ partial "related" . }}
 </article>
