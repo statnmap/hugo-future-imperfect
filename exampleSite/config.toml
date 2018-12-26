@@ -74,6 +74,8 @@ pluralizeListTitles = false
    # Code blocks to apply code folding
    codeblocks = ["pre.sourceCode", "pre.r", "pre.python", "pre.bash", "pre.sql", "pre.cpp", "pre.stan", "pre.js", "pre.css", "pre.html", "pre.yaml"]
 
+  # How to cite blog article
+  disable_citation = false
 
 # Disqus will take priority over Staticman (github.com/eduardoboucas/staticman)
 # due to its ease of use. Feel free to check out both and decide what you would

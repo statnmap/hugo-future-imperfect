@@ -29,6 +29,8 @@ Check out this [website](https://marionlouveaux.fr) if you are interested in see
 - [Syntax highlighting](#syntax-highlighting)
 - [Multilanguage](#multilingual)
 - [Code Folding](#code-folding)
+- [Citation](#citation)
+- [Related articles](#related-articles)
 - [About the Author](#about-the-author)
 - [License](#license)
 
@@ -209,7 +211,7 @@ Syntax highlighting for code is allowed with `highlight.js`. This can be disable
     highlightjsTheme = "github"
 ```
 
-Credit: [yihui, statnmap]
+Credit: [yihui], [statnmap]
 
 ## Multilingual
 
@@ -221,6 +223,9 @@ The `config.toml` file in `exampleSite` proposes menus for a second language (Fr
 
 If you only have one language for your website, you can remove every `Languages`, `Languages.en` and `Languages.fr` occurences. Simple `[menu.main]` have to be used instead.
 
+<img src="images/multilingual.png" alt="Hugo Future Imperfect Multilingual choice Screenshot" width="50%">
+
+
 Credit: [statnmap]
 
 ## Code folding
@@ -228,9 +233,17 @@ Code folding is enabled by default with `disable_codefolding = false` in paramet
 The list of `<pre>` blocks on which to apply code folding is defined in the `config` file: 
 `codeblocks = ["pre.sourceCode", "pre.r", "pre.python"]`
  
+<img src="images/code_folding.png" alt="Hugo Future Imperfect Code folding buttons Screenshot" width="75%">
+ 
 Credit: [statnmap]
 
- 
+## Citation
+
+As for [Radix](https://rstudio.github.io/radix/), a citation field can be added to blog posts. Citation is enabled by default with `disable_citation = false` in parameters of the `config` file. It can also be enabled or disabled in each blog post with `disable_citation` in the post YAML / TOML. By default author comes from blog `author` field in the article header but `citation_author` overrides this field if another writing is needed.
+Code is adapted from: Yihan Wu. (2018-12-21). "Blogdown - shortcode for radix-like Bibtex". Retrieved from https://www.yihanwu.ca/post/blogdown-shortcode-generation-for-bibtex/.
+
+<img src="images/citation.png" alt="Hugo Future Imperfect Citation Screenshot" width="75%">
+
 ## Related articles
 
 You can define parameters for related articles at the bottom of blog posts.
@@ -280,3 +293,4 @@ This theme is released under the MIT license. Please read the [license](https://
 [jpescador]: https://github.com/jpescador
 [pacollins]: https://github.com/pacollins
 [statnmap]: https://github.com/statnmap
+[yihui]: https://github.com/yihui
