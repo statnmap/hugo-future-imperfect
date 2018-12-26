@@ -63,3 +63,10 @@
 [show_code]
   other = "Code"
   
+# Citation
+[citation]
+  other = "Citation :"
+[please_cite_as]
+  other = "Merci de citer ce travail avec :"
+[bibtex_citation]
+  other = "Citation BibTex :"

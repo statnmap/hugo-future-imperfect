@@ -12,11 +12,12 @@
   {{ .Render "featured" }}
   
   <div>
-      {{ partial "header_maincodefolding" . }}
-  <br/>
-  <div id="content" class="article-entry">
-    {{ .Content }}
-  </div>
+    {{ partial "header_maincodefolding" . }}
+    <br/>
+    <div id="content" class="article-entry">
+      {{ .Content }}
+    </div>
+      {{ partial "citation" . }}
   </div>
 
   <footer>
