@@ -3,12 +3,14 @@
 Future Imperfect is a responsive theme tailored for blogging. The name is of no
 coincidence, because it is a port of [HTML5 UP's theme](http://html5up.net/future-imperfect)
 by the same name. In addition to the original features, there are more features
-that have been added for you to utilize.
+that have been added for you to utilize by [jpescador](https://github.com/jpescador), [pacollins](https://github.com/pacollins), [statnmap](https://github.com/statnmap) and [other project contributors](https://github.com/statnmap/hugo-future-imperfect/graphs/contributors)
+
+Noteworthy features of this Hugo theme are the integration of a comment-system powered by **Disqus**, **multilingual** support and **language switch**, **syntax highlighting** and **code folding** for source code, **how-to-cite card** and **related articles** sections on bottom of articles, **contact form**.
+
 
 <img src="images/screenshot_multilingual.png" alt="Hugo Future Imperfect Screenshot" width="45%">   <img src="images/screenshot_bloglist.png" alt="Blog post list" width="45%">
 
-Check out this [website](https://marionlouveaux.fr) if you are interested in seeing a live example.
-
+Check out this [website](https://marionlouveaux.fr) if you are interested in seeing a live example with all features added by [statnmap](https://github.com/statnmap).
 
 
 
@@ -31,6 +33,7 @@ Check out this [website](https://marionlouveaux.fr) if you are interested in see
 - [Code Folding](#code-folding)
 - [Citation](#citation)
 - [Related articles](#related-articles)
+- [Contact form](#contact-form)
 - [About the Author](#about-the-author)
 - [License](#license)
 
@@ -229,7 +232,7 @@ If you only have one language for your website, you can remove every `Languages`
 Credit: [statnmap]
 
 ## Code folding
-Code folding is enabled by default with `disable_codefolding = false` in parameters of the `config` file. It uses some javascript libraries of [bootstrap](https://getbootstrap.com/docs/3.3/javascript/). Code folding buttons only appear when there is code in the document rendered from `Rmd` in blogdown. `disable_codefolding` can also be used in each article config header. Similarly, you can define if code blocks are shown or hidden by default using `codefolding_show = "hide"` in the config file or in each article config.  
+Code folding is enabled by default with `disable_codefolding = false` in parameters of the `config` file. It uses some javascript libraries of [bootstrap](https://getbootstrap.com/docs/3.3/javascript/). Code folding (multilingual) buttons only appear when there is code in the document rendered from `Rmd` in blogdown. `disable_codefolding` can also be used in each article config header. Similarly, you can define if code blocks are shown or hidden by default using `codefolding_show = "hide"` in the config file or in each article config.  
 The list of `<pre>` blocks on which to apply code folding is defined in the `config` file: 
 `codeblocks = ["pre.sourceCode", "pre.r", "pre.python"]`
  
@@ -243,6 +246,8 @@ As for [Radix](https://rstudio.github.io/radix/), a citation field can be added 
 Code is adapted from: Yihan Wu. (2018-12-21). "Blogdown - shortcode for radix-like Bibtex". Retrieved from https://www.yihanwu.ca/post/blogdown-shortcode-generation-for-bibtex/.
 
 <img src="images/citation.png" alt="Hugo Future Imperfect Citation Screenshot" width="75%">
+
+Credit: [statnmap]
 
 ## Related articles
 
@@ -278,10 +283,22 @@ See <https://gohugo.io/content-management/related/> for more informations.
 
 Credit: [statnmap]
 
-## About the Author
+## Contact form
+
+Since this page will be static, you can use formspree.io as proxy to send the actual email. Each month, visitors can send you up to one thousand emails without incurring extra charges. Begin the setup by following the steps below:
+
+1. Enter your email address under ‘emailservice’ in contact/index.md file
+2. Upload the generated site to your server
+3. Send a dummy email yourself to confirm your account
+4. Click the confirm link in the email from formspree.io
+5. You’re done. Happy mailing!
+
+Credit: [statnmap]
+
+## About the Authors
 
 Hugo Future Imperfect was ported by [Julio Pescador](https://jpescador.com). Extra
-features implemented by the [project contributors](https://github.com/jpescador/hugo-future-imperfect/graphs/contributors).
+features implemented by the [project contributors](https://github.com/statnmap/hugo-future-imperfect/graphs/contributors).
 
 Send Julio Pescador a tweet [@julio_pescador](https://twitter.com/julio_pescador), if you like the theme and are using it for your own personal use.  
 Send StatnMap a tweet [@statnmap](https://twitter.com/statnmap), if you like the modifications of the theme and are using it for your own personal use.
