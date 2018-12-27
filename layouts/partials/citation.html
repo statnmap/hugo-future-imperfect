@@ -15,8 +15,9 @@
 </p>
 {{ i18n "bibtex_citation" }}
 <pre><code>@misc&#123;{{$name_string := replace ($.Scratch.Get "author") " " ""}}{{substr $name_string 0 5}}{{dateFormat "2006" $.Page.Params.date }}{{ $title := replace $.Page.Params.title " " ""}}{{substr $title 0 5}},
+    author = {{printf "{%s}" ($.Scratch.Get "author")}},
     title = {{$title_str := $.Page.Params.title}}{{printf "{%s}" $title_str}},
-    howpublished = {{$url_str := ($.Page.Permalink | absLangURL)}}{{printf "{\\url{%s}}" $url_str}},
+    url = {{$url_str := ($.Page.Permalink | absLangURL)}}{{printf "{%s}" $url_str}},
     year = {{$year_str := dateFormat "2006" $.Page.Params.date }}{{printf "{%s}" $year_str}}
   &#125;
 </code></pre>
