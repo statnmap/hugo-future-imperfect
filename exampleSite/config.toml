@@ -76,6 +76,7 @@ pluralizeListTitles = false
 
   # How to cite blog article
   disable_citation = false
+  citation_author = "Author A"
 
 # Disqus will take priority over Staticman (github.com/eduardoboucas/staticman)
 # due to its ease of use. Feel free to check out both and decide what you would

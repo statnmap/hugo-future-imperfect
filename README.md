@@ -30,6 +30,7 @@ Table of Contents
 -   [Citation](#citation)
 -   [Related articles](#related-articles)
 -   [Contact form](#contact-form)
+-   [Website SEO](#website-seo)
 -   [About the Author](#about-the-author)
 -   [License](#license)
 
@@ -213,7 +214,8 @@ Credit: [statnmap](https://github.com/statnmap)
 Citation
 --------
 
-As for [Radix](https://rstudio.github.io/radix/), a citation field can be added to blog posts. Citation is enabled by default with `disable_citation = false` in parameters of the `config` file. It can also be enabled or disabled in each blog post with `disable_citation` in the post YAML / TOML. By default author comes from blog `author` field in the article header but `citation_author` overrides this field if another writing is needed. Code is adapted from: Yihan Wu. (2018-12-21). "Blogdown - shortcode for radix-like Bibtex". Retrieved from <https://www.yihanwu.ca/post/blogdown-shortcode-generation-for-bibtex/>.
+As for [Radix](https://rstudio.github.io/radix/), a citation field can be added to blog posts. Citation is enabled by default with `disable_citation = false` in parameters of the `config` file. It can also be enabled or disabled in each blog post with `disable_citation` in the post YAML / TOML. By default author comes from blog `author` field in the article header but `citation_author` overrides this field if another writing is needed. `citation_author` can be specified globally in `config` file but also for each blog post.
+Code is adapted from: Yihan Wu. (2018-12-21). "Blogdown - shortcode for radix-like Bibtex". Retrieved from <https://www.yihanwu.ca/post/blogdown-shortcode-generation-for-bibtex/>.
 
 <img src="images/citation.png" alt="Hugo Future Imperfect Citation Screenshot" width="75%">
 
@@ -262,6 +264,14 @@ Since this page will be static, you can use formspree.io as proxy to send the ac
 3.  Send a dummy email yourself to confirm your account
 4.  Click the confirm link in the email from formspree.io
 5.  You’re done. Happy mailing!
+
+Credit: [statnmap](https://github.com/statnmap)
+
+Website SEO
+-----------
+
+This theme support SEO elements for your website. It was adapted and integrated thanks to the following guide:
+<https://keithpblog.org/post/hugo-website-seo/>
 
 Credit: [statnmap](https://github.com/statnmap)
 
