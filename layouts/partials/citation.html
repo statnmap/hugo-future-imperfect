@@ -2,7 +2,11 @@
 {{ if isset .Page.Params "citation_author" }}
   {{ $.Scratch.Set "author" .Page.Params.citation_author}}
 {{ else }}
-  {{$.Scratch.Set "author" .Page.Params.author}}
+  {{ if isset .Site.Params "citation_author" }}
+    {{ $.Scratch.Set "author" .Site.Params.citation_author}}
+  {{ else }}
+    {{$.Scratch.Set "author" .Page.Params.author}}
+  {{ end }}
 {{ end }}
 <br/>
 <hr>
