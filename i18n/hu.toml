@@ -1,0 +1,36 @@
+[date_format]
+  other = "2006, January 2"
+[postreadingtime]
+  other = "perc"
+[recent_posts]
+  other = "Legutóbbi postok"
+[see_more]
+  other = "Továbbiak"
+[read_more]
+  other = "Olvass tovább..."
+[categories]
+  other = "Kategóriák"
+[category]
+  other = "Kategória"
+[uncategorized]
+  other = "Kategorizálatlan"
+[share_post]
+  other = "Poszt megosztása"
+[about]
+  other = "Rólam"
+[learn_more]
+  other = "Tovább"
+[repliestext]
+  other = "Tipikus válaszidő"
+[hours]
+  other = "óra"
+[submit]
+  other = "Küldés"
+[404_oops]
+  other = "Hopszi, az oldal, amit keresel<br/>nem létezik."
+[404_backorreport]
+  other = "Ha úgy gondolod, hogy valami probléma történt, kérlek jelentsd a hibát."
+[404_gotohome]
+  other = "Vissza a főoldalra"
+[404_report]
+  other = "Probléma jelentése"
